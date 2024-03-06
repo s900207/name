@@ -10,10 +10,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Unfold - Personal Portfolio & CV Template</title>
+    <title>謝宸鏵作品集</title>
+    <style>
+        .image-link {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .image-link .image {
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+        
+        .image-link:hover .image {
+            filter: brightness(30%);
+        }
+        
+        .image-link .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-link:hover .button {
+    opacity: 1;
+}
+        </style>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -29,6 +61,8 @@
 
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 
 
 </head>
@@ -150,8 +184,8 @@
             <div class="row">
                 <div class="col-6 offset-3">
                     <div class="about-content mt-50">
-                        <p>畢業於真理大學應用日語學系，對網頁設計有興趣，大學時有修過相關的課程。想更進一步認識網頁設計，2023年9月到泰山職訓學習網頁前端設計課程，經歷過半年的學習，學習了HTML、CSS、Bootstrap、響應式網頁製作，JavaScript、jQuery、Vue.js前端框架以及一點Photoshop、Illustrator等的數位影像處理，並考取網頁設計丙級技術士。</p>
-                    </div> <!-- about content -->
+                        <p>畢業於真理大學應用日語學系，對網頁設計有興趣，大學時有選修過網頁設計的課程。畢業後想更進一步提升網頁設計的能力，於是參加近半年的職業訓練，學習了HTML、CSS、Bootstrap、響應式網頁製作，JavaScript、jQuery、Vue.js前端框架以及一點Photoshop、Illustrator等的數位影像處理，並考取網頁設計丙級技術士。</p>
+                    </div> 
                 </div>
                 
     </section>
@@ -166,7 +200,7 @@
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-30">
                         <h2 class="title">作品集</h2>
-                        <p>以下是我在職訓局時做的作業及作品</p>
+                        <p>以下是我在進修時做的作業及作品</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -177,10 +211,13 @@
                         <div class="single-service text-center mt-30">
                             <div class="row">
                                 <div class="col-6 d-flex align-items-center">
-                                    <img src="./assets/images/6.png" style="margin-top: 10px;">
+                                    <a href="https://s900207.github.io/book-front/#/" target="_blank"class="image-link">
+                                        <img src="./assets/images/6.png" class="image">
+                                        <i class="button">進入網站</i>
+                                    </a>
                                 </div>
                                 <div class="col-6 text-left">
-                                    <h4 class="service-title"><a href="https://s900207.github.io/book-front/#/">書評網</a></h4>
+                                    <h4 class="service-title">書評網</a></h4>
                                     <p style="line-height: 2; margin-bottom: 20px;">可以對感興趣的書籍評分和評論並觀看他人的評論來當作選購電子書(google book)的標準</p>
                                     <h5>網站功能</h5>
                                     <hr>
@@ -199,7 +236,10 @@
                         <div class="service-content"style="width: 250px; height: 300px; overflow: auto;text-align: center">
                             <h4 class="service-title"><a href="#">時鐘</a></h4>
                             <p>可以隨著按鈕變換畫面的時鐘型音樂撥放器</p>
-                            <img src="./assets/images/1.png" height="174px">
+                            <a href="https://s900207.github.io/clock/" target="_blank" class="image-link">
+                                <img src="./assets/images/1.png"height="174px" class="image">
+                                <i class="button">進入網站</i>
+                            </a>
                         </div>
                     </div> <!-- single service -->
                 </div>
@@ -208,7 +248,10 @@
                         <div class="service-content" style="width: 250px; height: 300px; overflow: auto; text-align: center;">
                             <h4 class="service-title"><a href="#contact">翻牌遊戲</a></h4>
                             <p>藉由翻牌聽動畫台詞辨認動畫人物角色</p>
-                            <img src="./assets/images/2.png" height="174px">
+                            <a href="https://s900207.github.io/cards/" target="_blank" class="image-link">
+                                <img src="./assets/images/2.png"height="174px" class="image">
+                                <i class="button">進入網站</i>
+                            </a>
                         </div>
                     </div> <!-- single service -->
                 </div>
@@ -217,7 +260,10 @@
                         <div class="service-content" style="width: 250px; height: 300px; overflow: auto; text-align: center;">
                             <h4 class="service-title"><a href="#">殭屍小遊戲</a></h4>
                             <p>點擊朝候選人飛來的物品，保護候選人吧</p>
-                            <img src="./assets/images/3.png" height="174px">
+                            <a href="https://s900207.github.io/zomble/" target="_blank" class="image-link">
+                                <img src="./assets/images/3.png"height="174px" class="image">
+                                <i class="button">進入網站</i>
+                            </a>
                         </div>
                     </div> <!-- single service -->
                 </div>
@@ -233,9 +279,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-8 d-flex justify-content-center">
                     <div class="single-service text-center mt-30">
                         <div class="service-content" style="width: 250px; height: 300px; overflow: auto; text-align: center;">
-                            <h4 class="service-title"><a href="https://s900207.github.io/pomodoro/#/">番茄鐘</a></h4>
-                            <p>有代辦事項、可更改鈴聲的簡易番茄鐘</p>
-                            <img src="./assets/images/5.png"height="174px">
+                            <h4 class="service-title">
+                                <h4>番茄鐘</h4>
+                                <p>有代辦事項、可更改鈴聲的簡易番茄鐘</p>
+                                <a href="https://s900207.github.io/pomodoro/#/" target="_blank" class="image-link">
+                                    <img src="./assets/images/5.png"height="174px" class="image">
+                                    <i class="button">進入網站</i>
+                                </a>
+
                         </div>
                     </div> <!-- single service -->
                 </div>
